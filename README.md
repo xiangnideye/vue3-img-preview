@@ -4,7 +4,7 @@
 vue3 + TS - img prerview
 
 ```js
-  import Vue3Preview from 'vue2-img-preview-layer'
+  import Vue3Preview from 'vue3-img-preview'
 
   Vue.use(Vue3Preview)
 
@@ -15,5 +15,9 @@
 ```
 
 ```js
-github 地址： https://github.com/xiangnideye/vue2-img-preview-layer
+npm i vue2-img-preview-layer
+
+vue2 图片预览  https://github.com/xiangnideye/vue2-img-preview-layer
+
+https://www.npmjs.com/package/vue2-img-preview-layer
 ```
