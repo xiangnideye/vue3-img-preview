@@ -1,7 +1,10 @@
 {
   "name": "vue3-img-preview",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.2",
+  "private": false,
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -17,6 +20,7 @@
     "sass-loader": "^8.0.2",
     "typescript": "~4.1.5"
   },
+  "main": "./lib/index.js",
   "browserslist": [
     "> 1%",
     "last 2 versions",

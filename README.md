@@ -1,19 +1,19 @@
 # vue3-img-preview
 
 ## Project setup
-```
-npm install
+vue2 - img prerview
+
+```js
+  import Vue3Preview from 'vue2-img-preview-layer'
+
+  Vue.use(Vue3Preview)
+
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+```js
+<preview :src="imgSrc"></preview>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```js
+github 地址： https://github.com/xiangnideye/vue2-img-preview-layer
+```

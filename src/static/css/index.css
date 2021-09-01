@@ -1,0 +1,71 @@
+.img-preview-container {
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.5);
+  overflow: hidden;
+}
+.img-preview-parent {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrap {
+  cursor: move;
+}
+
+.img-preview-img {
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.img-preview-btn-list {
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select:none;
+  -khtml-user-select:none;
+  -webkit-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.img-preview-btn-item {
+
+  margin: 0 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close-con {
+  position: fixed;
+  top: -50px;
+  right: -50px;
+  z-index: 100;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0,0,0,.5);
+}
+.close-con:hover {
+  background: rgba(0,0,0,.8);
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 20px;
+}

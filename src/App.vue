@@ -1,27 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <preview :src="imgSrc"></preview>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import { defineComponent, reactive, ref, toRefs } from 'vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+  },
+  setup() {
+    const state = reactive({
+      imgSrc: ''
+    })
+
+    setTimeout(() => {
+      state.imgSrc = 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fccm.ddcdn.com%2Fext%2Fphoto-w%2F1a%2F4f%2Faa%2F6a%2Ftupaq-restaurant.jpg&refer=http%3A%2F%2Fccm.ddcdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1632992016&t=80a0c521bcac99b838f0d85a9a6ebd45'
+    }, 10);
+
+    return {
+      ...toRefs(state)
+    }
   }
 });
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
+
 </style>
