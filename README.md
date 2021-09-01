@@ -1,7 +1,7 @@
 # vue3-img-preview
 
 ## Project setup
-vue2 - img prerview
+vue3 + TS - img prerview
 
 ```js
   import Vue3Preview from 'vue2-img-preview-layer'
